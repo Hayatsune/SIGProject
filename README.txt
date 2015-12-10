@@ -1,5 +1,7 @@
 This is a really nice awesome badass incredible readme for a really nice awesome badass incredible project. (lies)
 
+FUCK POSTGIS.
+
 Tuto : http://learnosm.org/en/osm-data/osm2pgsql/
 
 
