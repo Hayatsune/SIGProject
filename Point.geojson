@@ -1,0 +1,3416 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/279103826",
+  "properties": {
+    "timestamp": "2012-09-16T12:09:33Z",
+    "version": "5",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/279103826"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9374356,
+      47.8474269
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/339340676",
+  "properties": {
+    "timestamp": "2009-10-12T08:02:51Z",
+    "version": "4",
+    "changeset": "2822618",
+    "user": "chatcelte",
+    "uid": "179263",
+    "name": "Lorette",
+    "railway": "tram_stop",
+    "id": "node/339340676"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9253913,
+      47.8497006
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/334638584",
+  "properties": {
+    "timestamp": "2013-06-19T08:49:22Z",
+    "version": "7",
+    "changeset": "16613224",
+    "user": "wheelmap_android",
+    "uid": "524500",
+    "name": "Les Aulnaies",
+    "railway": "tram_stop",
+    "wheelchair": "yes",
+    "id": "node/334638584"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9169804,
+      47.8463698
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/445967276",
+  "properties": {
+    "timestamp": "2009-10-12T08:02:51Z",
+    "version": "3",
+    "changeset": "2822618",
+    "user": "chatcelte",
+    "uid": "179263",
+    "highway": "traffic_signals",
+    "id": "node/445967276"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9285425,
+      47.8480319
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/477549324",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:56Z",
+    "version": "3",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "16",
+    "id": "node/477549324"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9394022,
+      47.8432673
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/482733247",
+  "properties": {
+    "timestamp": "2009-09-03T20:22:41Z",
+    "version": "1",
+    "changeset": "2363527",
+    "user": "Daimonos Tereutes",
+    "uid": "53587",
+    "highway": "bus_stop",
+    "name": "Polytech",
+    "id": "node/482733247"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9289319,
+      47.842363
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/496572074",
+  "properties": {
+    "timestamp": "2009-10-12T08:02:52Z",
+    "version": "3",
+    "changeset": "2822618",
+    "user": "chatcelte",
+    "uid": "179263",
+    "name": "Université-Château",
+    "railway": "tram_stop",
+    "id": "node/496572074"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9318278,
+      47.8468426
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/496598017",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:30Z",
+    "version": "3",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "name": "Université-L'Indien",
+    "railway": "tram_stop",
+    "id": "node/496598017"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9349049,
+      47.8397178
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/477549329",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:56Z",
+    "version": "4",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "12",
+    "id": "node/477549329"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9396169,
+      47.8434969
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/339340684",
+  "properties": {
+    "timestamp": "2012-09-16T12:09:31Z",
+    "version": "6",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "name": "Université-Parc Floral",
+    "railway": "tram_stop",
+    "id": "node/339340684"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9362458,
+      47.8453556
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/477549221",
+  "properties": {
+    "timestamp": "2012-09-27T09:35:56Z",
+    "version": "3",
+    "changeset": "13269486",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/477549221"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9398806,
+      47.8439588
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/477549224",
+  "properties": {
+    "timestamp": "2012-09-27T09:35:56Z",
+    "version": "3",
+    "changeset": "13269486",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/477549224"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9401596,
+      47.8436903
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/477549226",
+  "properties": {
+    "timestamp": "2012-09-27T09:35:57Z",
+    "version": "4",
+    "changeset": "13269486",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/477549226"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9401833,
+      47.8433674
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/314861410",
+  "properties": {
+    "timestamp": "2013-10-24T08:50:47Z",
+    "version": "11",
+    "changeset": "18516070",
+    "user": "JIBEC",
+    "uid": "706229",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/314861410"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9332921,
+      47.840046
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/529291449",
+  "properties": {
+    "timestamp": "2011-03-28T09:51:25Z",
+    "version": "2",
+    "changeset": "7694993",
+    "user": "Aubanel",
+    "uid": "13796",
+    "barrier": "gate",
+    "id": "node/529291449"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9378389,
+      47.8476553
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/524618286",
+  "properties": {
+    "timestamp": "2013-04-14T19:42:08Z",
+    "version": "3",
+    "changeset": "15729287",
+    "user": "Hoff1980",
+    "uid": "500450",
+    "name": "Hôpital de La Source",
+    "railway": "tram_stop",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "id": "node/524618286"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9191785,
+      47.8374494
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/702486790",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:32Z",
+    "version": "2",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/702486790"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9348823,
+      47.8400081
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/938879620",
+  "properties": {
+    "timestamp": "2013-02-04T11:00:21Z",
+    "version": "4",
+    "changeset": "14908188",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "post_box",
+    "operator": "La Poste",
+    "id": "node/938879620"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9308016,
+      47.8451364
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/518747382",
+  "properties": {
+    "timestamp": "2014-05-30T17:03:19Z",
+    "version": "3",
+    "changeset": "22642088",
+    "user": "airv",
+    "uid": "504933",
+    "barrier": "yes",
+    "id": "node/518747382"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9273082,
+      47.8433581
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/942753621",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:57Z",
+    "version": "2",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/942753621"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9389489,
+      47.8462231
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/524618523",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:32Z",
+    "version": "3",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/524618523"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9353114,
+      47.8398629
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/702486791",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:32Z",
+    "version": "3",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "traffic_signals",
+    "source": "survey;Bing 2011",
+    "id": "node/702486791"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9350802,
+      47.8399377
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1097227299",
+  "properties": {
+    "timestamp": "2014-12-09T12:11:54Z",
+    "version": "4",
+    "changeset": "27355157",
+    "user": "JBacc1",
+    "uid": "704348",
+    "highway": "crossing",
+    "id": "node/1097227299"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9287276,
+      47.8421223
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1422842336",
+  "properties": {
+    "timestamp": "2011-09-04T10:26:12Z",
+    "version": "1",
+    "changeset": "9207388",
+    "user": "DF45",
+    "uid": "239546",
+    "highway": "turning_circle",
+    "id": "node/1422842336"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9262729,
+      47.8498268
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1107863304",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:56Z",
+    "version": "2",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "10",
+    "id": "node/1107863304"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9395859,
+      47.8435933
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1107863463",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:56Z",
+    "version": "2",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "14",
+    "id": "node/1107863463"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9395774,
+      47.8433814
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1107913425",
+  "properties": {
+    "timestamp": "2011-01-17T18:38:02Z",
+    "version": "1",
+    "changeset": "7002566",
+    "user": "BlueCelest",
+    "uid": "367472",
+    "barrier": "lift_gate",
+    "bicycle": "yes",
+    "foot": "yes",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1107913425"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9357848,
+      47.8412567
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1107941648",
+  "properties": {
+    "timestamp": "2012-11-23T11:31:39Z",
+    "version": "2",
+    "changeset": "13997507",
+    "user": "Gustry",
+    "uid": "86289",
+    "entrance": "main",
+    "id": "node/1107941648"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9364675,
+      47.8417068
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902777",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:31Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "information": "map",
+    "name": "Carte",
+    "tourism": "information",
+    "id": "node/1311902777"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9394867,
+      47.8467961
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902775",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:31Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "place_of_worship",
+    "name": "Chapelle",
+    "id": "node/1311902775"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9369466,
+      47.8483207
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902776",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:31Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "information": "map",
+    "name": "Panneau carte",
+    "tourism": "information",
+    "id": "node/1311902776"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9397736,
+      47.8465838
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902771",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:35Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "emergency": "fire_hydrant",
+    "id": "node/1311902771"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9381187,
+      47.847257
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902770",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:33Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "toilets",
+    "id": "node/1311902770"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9377942,
+      47.8477033
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902772",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:35Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "emergency": "fire_hydrant",
+    "id": "node/1311902772"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9344414,
+      47.8485368
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902774",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:31Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "restaurant",
+    "name": "La Terrasse du Parc",
+    "website": "http://www.laterrasse45.com",
+    "id": "node/1311902774"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9380651,
+      47.8475917
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902773",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:35Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "bicycle_parking",
+    "capacity": "8",
+    "name": "Parc floral",
+    "id": "node/1311902773"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9382152,
+      47.8472461
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1311902764",
+  "properties": {
+    "timestamp": "2011-06-04T15:02:34Z",
+    "version": "2",
+    "changeset": "8339894",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "drinking_water",
+    "id": "node/1311902764"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9371799,
+      47.849831
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1335930024",
+  "properties": {
+    "timestamp": "2013-04-14T19:42:07Z",
+    "version": "2",
+    "changeset": "15729287",
+    "user": "Hoff1980",
+    "uid": "500450",
+    "name": "Bolière",
+    "railway": "tram_stop",
+    "id": "node/1335930024"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9290366,
+      47.8316072
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1335930026",
+  "properties": {
+    "timestamp": "2013-05-16T14:48:16Z",
+    "version": "2",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "name": "Orléans La Source - Chèques Postaux",
+    "railway": "tram_stop",
+    "id": "node/1335930026"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9322058,
+      47.8359918
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1176010115",
+  "properties": {
+    "timestamp": "2012-10-30T12:51:15Z",
+    "version": "2",
+    "changeset": "13686352",
+    "user": "LudovicG",
+    "uid": "209796",
+    "historic": "monument",
+    "id": "node/1176010115"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9384692,
+      47.8450016
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1335930116",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:31Z",
+    "version": "2",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/1335930116"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9336076,
+      47.8378306
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1335930119",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:31Z",
+    "version": "2",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/1335930119"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.934739,
+      47.8393399
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1422842401",
+  "properties": {
+    "timestamp": "2013-11-07T21:41:53Z",
+    "version": "2",
+    "changeset": "18771999",
+    "user": "DF45",
+    "uid": "239546",
+    "highway": "turning_circle",
+    "id": "node/1422842401"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9260514,
+      47.8495701
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1436406800",
+  "properties": {
+    "timestamp": "2015-03-24T19:55:49Z",
+    "version": "3",
+    "changeset": "29712343",
+    "user": "earthmap",
+    "uid": "1870938",
+    "highway": "bus_stop",
+    "name": "Université Parc Floral",
+    "operator": "KEOLIS",
+    "id": "node/1436406800"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9390035,
+      47.8462483
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965674",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:31Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1916965674"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9289204,
+      47.8420087
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965736",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:33Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "natural": "tree",
+    "id": "node/1916965736"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9257275,
+      47.8437907
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965740",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:34Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1916965740"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.929564,
+      47.8437954
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965743",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:34Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "natural": "tree",
+    "id": "node/1916965743"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9257942,
+      47.8438101
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965754",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:34Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "natural": "tree",
+    "id": "node/1916965754"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9258186,
+      47.8438564
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965782",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:35Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "natural": "tree",
+    "id": "node/1916965782"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.934246,
+      47.8443766
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965784",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:35Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "natural": "tree",
+    "id": "node/1916965784"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9343024,
+      47.8444045
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965799",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:35Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1916965799"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9305394,
+      47.8453008
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965815",
+  "properties": {
+    "timestamp": "2012-09-16T11:49:36Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1916965815"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9321688,
+      47.8467812
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916986971",
+  "properties": {
+    "timestamp": "2012-09-16T12:09:28Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1916986971"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.934921,
+      47.8482762
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1917053746",
+  "properties": {
+    "timestamp": "2012-09-16T12:49:30Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1917053746"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9345766,
+      47.8476939
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1917053752",
+  "properties": {
+    "timestamp": "2012-09-16T12:49:30Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1917053752"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9338768,
+      47.8479226
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1917053755",
+  "properties": {
+    "timestamp": "2012-09-16T12:49:30Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "highway": "crossing",
+    "id": "node/1917053755"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9333501,
+      47.8480963
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1917053765",
+  "properties": {
+    "timestamp": "2012-09-16T12:49:30Z",
+    "version": "1",
+    "changeset": "13129418",
+    "user": "Gustry",
+    "uid": "86289",
+    "entrance": "main",
+    "id": "node/1917053765"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.931074,
+      47.8488849
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1943167137",
+  "properties": {
+    "timestamp": "2012-10-02T19:51:31Z",
+    "version": "1",
+    "changeset": "13339389",
+    "user": "Azaret",
+    "uid": "921309",
+    "highway": "crossing",
+    "id": "node/1943167137"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9317543,
+      47.8241888
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1943167235",
+  "properties": {
+    "timestamp": "2012-10-02T19:51:33Z",
+    "version": "1",
+    "changeset": "13339389",
+    "user": "Azaret",
+    "uid": "921309",
+    "highway": "crossing",
+    "id": "node/1943167235"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9293731,
+      47.8269504
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1943167278",
+  "properties": {
+    "timestamp": "2012-10-02T19:51:34Z",
+    "version": "1",
+    "changeset": "13339389",
+    "user": "Azaret",
+    "uid": "921309",
+    "highway": "crossing",
+    "id": "node/1943167278"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9309811,
+      47.8250968
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1943167286",
+  "properties": {
+    "timestamp": "2012-10-02T19:51:35Z",
+    "version": "1",
+    "changeset": "13339389",
+    "user": "Azaret",
+    "uid": "921309",
+    "highway": "crossing",
+    "id": "node/1943167286"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9303747,
+      47.8258339
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2027905252",
+  "properties": {
+    "timestamp": "2012-11-23T11:31:36Z",
+    "version": "1",
+    "changeset": "13997507",
+    "user": "Gustry",
+    "uid": "86289",
+    "camera:type": "dome",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "id": "node/2027905252"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9360212,
+      47.8417123
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2027905253",
+  "properties": {
+    "timestamp": "2012-11-23T11:31:36Z",
+    "version": "1",
+    "changeset": "13997507",
+    "user": "Gustry",
+    "uid": "86289",
+    "entrance": "main",
+    "id": "node/2027905253"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9366105,
+      47.8418201
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965669",
+  "properties": {
+    "timestamp": "2015-03-24T19:55:49Z",
+    "version": "3",
+    "changeset": "29712343",
+    "user": "earthmap",
+    "uid": "1870938",
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Université Parc Floral",
+    "operator": "KEOLIS",
+    "shelter": "yes",
+    "id": "node/1916965669"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9390866,
+      47.846129
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1916965699",
+  "properties": {
+    "timestamp": "2014-05-30T17:03:19Z",
+    "version": "2",
+    "changeset": "22642088",
+    "user": "airv",
+    "uid": "504933",
+    "barrier": "yes",
+    "id": "node/1916965699"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9270669,
+      47.8427892
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1943167281",
+  "properties": {
+    "timestamp": "2015-05-20T14:27:02Z",
+    "version": "2",
+    "changeset": "31316229",
+    "user": "andygol",
+    "uid": "94578",
+    "highway": "crossing",
+    "id": "node/1943167281"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9321387,
+      47.8237221
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2264638372",
+  "properties": {
+    "timestamp": "2013-04-12T16:30:14Z",
+    "version": "1",
+    "changeset": "15703044",
+    "user": "Teuxe",
+    "uid": "130277",
+    "name": "Entrée",
+    "railway": "halt",
+    "id": "node/2264638372"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9367563,
+      47.8479605
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2264605211",
+  "properties": {
+    "timestamp": "2013-04-12T16:30:16Z",
+    "version": "2",
+    "changeset": "15703044",
+    "user": "Teuxe",
+    "uid": "130277",
+    "name": "Rocaille",
+    "railway": "halt",
+    "id": "node/2264605211"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9405394,
+      47.8481438
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2267484867",
+  "properties": {
+    "timestamp": "2013-05-09T04:28:09Z",
+    "version": "2",
+    "changeset": "16041538",
+    "user": "choess",
+    "uid": "396743",
+    "railway": "buffer_stop",
+    "id": "node/2267484867"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9193954,
+      47.8374955
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2297492621",
+  "properties": {
+    "timestamp": "2013-05-09T19:35:53Z",
+    "version": "1",
+    "changeset": "16053905",
+    "user": "Chwal",
+    "uid": "1423326",
+    "barrier": "lift_gate",
+    "id": "node/2297492621"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9414257,
+      47.8397342
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3363156053",
+  "properties": {
+    "timestamp": "2015-02-21T14:38:29Z",
+    "version": "2",
+    "changeset": "29000080",
+    "user": "djo_man",
+    "uid": "213292",
+    "crossing": "zebra",
+    "highway": "crossing",
+    "id": "node/3363156053"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9377932,
+      47.8384338
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2306462103",
+  "properties": {
+    "timestamp": "2013-05-16T14:41:12Z",
+    "version": "1",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "bus_stop",
+    "name": "Senghor",
+    "id": "node/2306462103"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.928755,
+      47.8395844
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2306457888",
+  "properties": {
+    "timestamp": "2013-05-16T14:32:13Z",
+    "version": "1",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "bus_stop",
+    "name": "Université-Château",
+    "id": "node/2306457888"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9321963,
+      47.846877
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2306457889",
+  "properties": {
+    "timestamp": "2013-05-16T14:32:13Z",
+    "version": "1",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "bus_stop",
+    "name": "Université-Château",
+    "id": "node/2306457889"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9319978,
+      47.8464936
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2306461460",
+  "properties": {
+    "timestamp": "2013-05-16T14:38:45Z",
+    "version": "1",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "bus_stop",
+    "name": "Université-L'Indien",
+    "id": "node/2306461460"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9369035,
+      47.8393414
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2306461463",
+  "properties": {
+    "timestamp": "2013-05-16T14:38:45Z",
+    "version": "1",
+    "changeset": "16153957",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "bus_stop",
+    "name": "Université-L'Indien",
+    "id": "node/2306461463"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.933414,
+      47.8402181
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2323066230",
+  "properties": {
+    "timestamp": "2013-05-28T12:51:12Z",
+    "version": "1",
+    "changeset": "16323220",
+    "user": "Chwal",
+    "uid": "1423326",
+    "highway": "turning_circle",
+    "id": "node/2323066230"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9255014,
+      47.8378346
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2127443700",
+  "properties": {
+    "timestamp": "2013-01-25T13:21:36Z",
+    "version": "1",
+    "changeset": "14780621",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "recycling",
+    "recycling:cans": "yes",
+    "recycling:cartons": "yes",
+    "recycling:magazines": "yes",
+    "recycling:newspaper": "yes",
+    "recycling:paper": "yes",
+    "recycling:paper_packaging": "yes",
+    "recycling:plastic": "yes",
+    "recycling:plastic_bottles": "yes",
+    "recycling:plastic_packaging": "yes",
+    "recycling_type": "container",
+    "id": "node/2127443700"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.936922,
+      47.8387962
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2136534364",
+  "properties": {
+    "timestamp": "2013-01-31T20:44:27Z",
+    "version": "1",
+    "changeset": "14864194",
+    "user": "Gustry",
+    "uid": "86289",
+    "camera:type": "dome",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "id": "node/2136534364"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.936581,
+      47.8420699
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2141247746",
+  "properties": {
+    "timestamp": "2013-02-04T11:58:26Z",
+    "version": "1",
+    "changeset": "14908861",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "post_box",
+    "ref": "A0W4C8",
+    "id": "node/2141247746"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9353909,
+      47.83939
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2141247745",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:31Z",
+    "version": "2",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "telephone",
+    "source": "survey",
+    "id": "node/2141247745"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347664,
+      47.839755
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849466",
+  "properties": {
+    "timestamp": "2013-02-15T11:14:00Z",
+    "version": "1",
+    "changeset": "15038929",
+    "user": "LudovicG",
+    "uid": "209796",
+    "name": "Cordonnier",
+    "shop": "shoes",
+    "id": "node/2155849466"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9362529,
+      47.8391469
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216190613",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:53Z",
+    "version": "1",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "id": "node/2216190613"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9381115,
+      47.8425695
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216190618",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:54Z",
+    "version": "1",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "id": "node/2216190618"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9383747,
+      47.842581
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216190624",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:54Z",
+    "version": "1",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "natural": "tree",
+    "id": "node/2216190624"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9380368,
+      47.8427687
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216190631",
+  "properties": {
+    "timestamp": "2013-03-23T10:33:54Z",
+    "version": "1",
+    "changeset": "15464054",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "id": "node/2216190631"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9384658,
+      47.8430481
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636814",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:17Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "5",
+    "entrance": "main",
+    "name": "Aristote 2",
+    "source": "survey",
+    "id": "node/2216636814"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9359817,
+      47.8405423
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636815",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "3",
+    "entrance": "main",
+    "name": "Aristote 2",
+    "source": "survey",
+    "id": "node/2216636815"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9361328,
+      47.8407529
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636816",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "7",
+    "entrance": "main",
+    "name": "Aristote 3",
+    "source": "survey",
+    "id": "node/2216636816"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9356645,
+      47.8400999
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636817",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "fast_food",
+    "name": "L'Indiana",
+    "source": "survey",
+    "id": "node/2216636817"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9359062,
+      47.8403996
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636818",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "information": "map",
+    "map_size": "city",
+    "map_type": "scheme",
+    "name": "Orléans - La Source",
+    "source": "survey",
+    "tourism": "information",
+    "id": "node/2216636818"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9346004,
+      47.8395465
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636830",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636830"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9334701,
+      47.8378603
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636833",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636833"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9341875,
+      47.8386374
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636834",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:18Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636834"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9340873,
+      47.83867
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636840",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "id": "node/2216636840"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347661,
+      47.8392738
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636841",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "no",
+    "seats": "3",
+    "id": "node/2216636841"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347965,
+      47.8392767
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636843",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636843"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9349348,
+      47.8393486
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636844",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636844"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9346626,
+      47.839368
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636846",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636846"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9345776,
+      47.8393939
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636851",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636851"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9344967,
+      47.8394974
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636855",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "source": "survey",
+    "id": "node/2216636855"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9346608,
+      47.8395812
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636857",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636857"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347242,
+      47.8396718
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636858",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636858"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347058,
+      47.839698
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636859",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636859"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9347464,
+      47.839702
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636860",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636860"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.934836,
+      47.8398121
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636861",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636861"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9348175,
+      47.8398383
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636862",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:19Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "4",
+    "source": "survey",
+    "id": "node/2216636862"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9348581,
+      47.8398423
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636864",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "anchors",
+    "capacity": "10",
+    "source": "survey",
+    "id": "node/2216636864"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9348872,
+      47.8399079
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636866",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "source": "survey",
+    "id": "node/2216636866"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9348636,
+      47.8399497
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636868",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "id": "node/2216636868"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9352211,
+      47.8399618
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636872",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "traffic_signals",
+    "highway": "crossing",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "id": "node/2216636872"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9350332,
+      47.8400207
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636879",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "source": "survey",
+    "id": "node/2216636879"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9353864,
+      47.8401049
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636880",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636880"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9343975,
+      47.8401662
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636887",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636887"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9339917,
+      47.8402985
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636891",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "source": "survey;Bing 2011",
+    "id": "node/2216636891"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9336991,
+      47.8403939
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636895",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "source": "survey",
+    "id": "node/2216636895"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9362842,
+      47.8409698
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636899",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:20Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "id": "node/2216636899"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9368689,
+      47.8410465
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636901",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:21Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "bicycle": "yes",
+    "crossing": "uncontrolled",
+    "highway": "crossing",
+    "id": "node/2216636901"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9363003,
+      47.8410814
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636921",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:21Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "parking_space",
+    "parking_space": "disabled",
+    "source": "survey",
+    "id": "node/2216636921"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9366309,
+      47.8412803
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636933",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:21Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "amenity": "waste_basket",
+    "source": "survey",
+    "id": "node/2216636933"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9366162,
+      47.8414223
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636935",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:21Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:type": "pillar",
+    "id": "node/2216636935"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9369186,
+      47.841465
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2216636937",
+  "properties": {
+    "timestamp": "2013-03-23T15:02:21Z",
+    "version": "1",
+    "changeset": "15467282",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "barrier": "bump_gate",
+    "id": "node/2216636937"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.937131,
+      47.8415353
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2141247747",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "5",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans la Source",
+    "addr:postcode": "45100",
+    "name": "Dia",
+    "operator": "Dia France",
+    "shop": "supermarket",
+    "id": "node/2141247747"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9356596,
+      47.839387
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2506870515",
+  "properties": {
+    "timestamp": "2013-10-24T08:49:22Z",
+    "version": "1",
+    "changeset": "18516070",
+    "user": "JIBEC",
+    "uid": "706229",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "id": "node/2506870515"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9269395,
+      47.8296961
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2705503079",
+  "properties": {
+    "timestamp": "2014-03-07T13:18:49Z",
+    "version": "1",
+    "changeset": "20969179",
+    "user": "LudovicG",
+    "uid": "209796",
+    "amenity": "telephone",
+    "id": "node/2705503079"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9362664,
+      47.8390033
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2705503080",
+  "properties": {
+    "timestamp": "2014-03-07T13:18:49Z",
+    "version": "1",
+    "changeset": "20969179",
+    "user": "LudovicG",
+    "uid": "209796",
+    "shop": "newsagent",
+    "id": "node/2705503080"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9358077,
+      47.8392896
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369050",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "10",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369050"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9323353,
+      47.8396709
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369051",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "12",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369051"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9318757,
+      47.8395623
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369052",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "13",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369052"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9288119,
+      47.8395069
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369053",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "24",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369053"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9290917,
+      47.8403894
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369054",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "28",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369054"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9275641,
+      47.8409013
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369055",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "30",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369055"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9278665,
+      47.8408017
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369056",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "31",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369056"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9287445,
+      47.839791
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369057",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "32",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369057"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9273368,
+      47.8409746
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369058",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "33",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369058"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9287957,
+      47.8398603
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369059",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "35",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369059"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9287421,
+      47.8403969
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369060",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "37",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369060"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.928143,
+      47.8405977
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733369061",
+  "properties": {
+    "timestamp": "2014-03-22T09:47:59Z",
+    "version": "1",
+    "changeset": "21240437",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "addr:housenumber": "9",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "id": "node/2733369061"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9306803,
+      47.8397522
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380811",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:04Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380811"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9287916,
+      47.8393244
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380812",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:04Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380812"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9284564,
+      47.8394374
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380813",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:04Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380813"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9286601,
+      47.8394473
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380817",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:04Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380817"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9292121,
+      47.8402016
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380818",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:04Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "leisure": "playground",
+    "source": "Bing 2011",
+    "id": "node/2733380818"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9289332,
+      47.8402093
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380819",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:05Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380819"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9293883,
+      47.840237
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380821",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:05Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380821"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9291661,
+      47.8403115
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2733380823",
+  "properties": {
+    "timestamp": "2014-03-22T10:02:05Z",
+    "version": "1",
+    "changeset": "21240661",
+    "user": "Cyrille37",
+    "uid": "454932",
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Bing 2011",
+    "tactile_paving": "yes",
+    "id": "node/2733380823"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9293239,
+      47.8403544
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2161182274",
+  "properties": {
+    "timestamp": "2015-03-21T13:36:21Z",
+    "version": "2",
+    "changeset": "29634592",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans",
+    "addr:housenumber": "5",
+    "addr:postcode": "45100",
+    "addr:street": "Place de l'Indien",
+    "amenity": "bank",
+    "atm": "yes",
+    "name": "BNP Paribas Orléans Université",
+    "operator": "BNP Paribas",
+    "id": "node/2161182274"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9352623,
+      47.8395662
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849467",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "2",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans la Source",
+    "addr:housenumber": "30",
+    "addr:postcode": "45100",
+    "addr:street": "Avenue du Président John Kennedy",
+    "amenity": "bank",
+    "name": "LCL Orléans la Source",
+    "id": "node/2155849467"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9345,
+      47.8396061
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849468",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "2",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "amenity": "bank",
+    "name": "Société Générale",
+    "id": "node/2155849468"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.935098,
+      47.8394419
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849469",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "2",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans la Source",
+    "addr:postcode": "45100",
+    "amenity": "bank",
+    "name": "Banque Populaire",
+    "id": "node/2155849469"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9352698,
+      47.839363
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849470",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "2",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans la Source",
+    "addr:postcode": "45100",
+    "amenity": "bank",
+    "name": "Caisse d'Epargne",
+    "id": "node/2155849470"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9343298,
+      47.8394251
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849464",
+  "properties": {
+    "timestamp": "2015-03-26T15:54:03Z",
+    "version": "2",
+    "changeset": "29756929",
+    "user": "earthmap",
+    "uid": "1870938",
+    "addr:city": "Orléans la Source",
+    "addr:postcode": "45100",
+    "shop": "hairdresser",
+    "id": "node/2155849464"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9343741,
+      47.8392945
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2889475442",
+  "properties": {
+    "timestamp": "2014-05-30T17:00:01Z",
+    "version": "1",
+    "changeset": "22642043",
+    "user": "airv",
+    "uid": "504933",
+    "amenity": "university",
+    "name": "GREMI",
+    "id": "node/2889475442"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9274319,
+      47.8429726
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2889499853",
+  "properties": {
+    "timestamp": "2014-05-30T17:09:28Z",
+    "version": "1",
+    "changeset": "22642169",
+    "user": "airv",
+    "uid": "504933",
+    "amenity": "university",
+    "name": "Polytech'Orléans Site Galilée",
+    "id": "node/2889499853"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9284589,
+      47.8425748
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2155849465",
+  "properties": {
+    "timestamp": "2014-07-28T21:29:37Z",
+    "version": "2",
+    "changeset": "24411346",
+    "user": "Art Penteur",
+    "uid": "92075",
+    "amenity": "pharmacy",
+    "dispensing": "yes",
+    "name": "Pharmacie",
+    "id": "node/2155849465"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9361283,
+      47.8391865
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3157676535",
+  "properties": {
+    "timestamp": "2015-06-09T21:05:44Z",
+    "version": "2",
+    "changeset": "31856115",
+    "user": "overflorian",
+    "uid": "125897",
+    "addr:city": "Orléans",
+    "addr:full": "8 rue Léonard de Vinci, dans les locaux de Polytech Orléans, bâtiment Pascal, 4eme étage.",
+    "addr:housenumber": "8",
+    "addr:street": "rue Léonard de Vinci",
+    "hazard": "robot",
+    "leisure": "hackerspace",
+    "name": "FabLab Orléanais",
+    "opening_hours": "Mo 9:30-21:00; Tu 9:30-17:30; We 9:30-19:00; Th 9:30-21:00; Fr 9:30-19:00",
+    "website": "http://vincentmarce.phpnet.org/sitejoomla/FabLab_Orleans/",
+    "workshop": "fablab",
+    "id": "node/3157676535"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9389915,
+      47.8442046
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3658926542",
+  "properties": {
+    "timestamp": "2015-07-20T13:14:53Z",
+    "version": "1",
+    "changeset": "32753830",
+    "user": "splach",
+    "uid": "503842",
+    "amenity": "parking",
+    "id": "node/3658926542"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9403558,
+      47.8444591
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3658926543",
+  "properties": {
+    "timestamp": "2015-07-20T13:14:53Z",
+    "version": "1",
+    "changeset": "32753830",
+    "user": "splach",
+    "uid": "503842",
+    "amenity": "parking",
+    "id": "node/3658926543"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9401446,
+      47.8444108
+    ]
+  }
+}
+]
+}
