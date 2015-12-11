@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 </head>
 <body>
+	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/>
 	<div id="map" style="width: 600px; height: 400px"></div>
 
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -63,7 +64,9 @@
 
 		map.on('click', onMapClick);
 		
-		
+		function goToBuildings() {
+			document.location.href = 'listebat.html';
+		}
 		
 		
 
