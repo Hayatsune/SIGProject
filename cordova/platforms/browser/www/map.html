@@ -26,14 +26,17 @@
 			id: 'mapbox.streets'
 		}).addTo(map);
 		
-		$.getJSON("map2.geojson",function(data){
+		/*$.getJSON("map2.geojson",function(data){
 			L.geoJson(data, {
 				onEachFeature: function( feature, layer ){
 					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
 			}).addTo(map);
-		});
+		});*/
 		
-		
+		L.geoJson(getCoord("relation/1717203"), {
+			onEachFeature: function( feature, layer ){
+				layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
+		}).addTo(map);
 
 		map.locate({setView: true, maxZoom: 16});
 		
@@ -68,7 +71,19 @@
 			document.location.href = 'listebat.html';
 		}
 		
-		
+		function getCoord(id) {
+			$.getJSON('batiment.geojson', function (data) {
+				$.each(data.features, function (key, val) {
+			    	$.each(val.properties, function(i,j){
+			    		if (j===id) {
+			    			var lol = '{ "type": "FeatureCollection","features": ['+data.features+']}';
+			    			alert(lol);
+			    			return lol;
+			    		}
+			    	});         
+				});
+			});
+		}
 
 	</script>
 </body>
