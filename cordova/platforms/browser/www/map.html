@@ -10,6 +10,10 @@
 </head>
 <body>
 	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/>
+	<form action="map.html">
+	  <input type="text" name="batiment" id="batiment">
+	  <input type="button" onclick="searchBat(document.getElementById('batiment').value)" value="Rechercher">
+	</form>
 	<div id="map" style="width: 600px; height: 400px"></div>
 
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -25,19 +29,47 @@
 				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 			id: 'mapbox.streets'
 		}).addTo(map);
-		
-		/*$.getJSON("map2.geojson",function(data){
+		/*
+		$.getJSON("map2.geojson",function(data){
 			L.geoJson(data, {
 				onEachFeature: function( feature, layer ){
 					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
 			}).addTo(map);
 		});*/
 		
+		function obtenirParametre (sVar) {
+			return unescape(location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+		}
+
+		var idbat = obtenirParametre("donnees");
+		
+		var batiment = $.getJSON("batiment.geojson");
+		batiment.then(function(data){
+			var allbat = L.geoJson(data);
+			
+			var bat = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.id == idbat;
+				}
+			});
+			bat.addTo(map);
+		});
+		
+		function searchBat(bat) {
+			alert("test");
+		}
+		
+		
+		/*
 		L.geoJson(getCoord("relation/1717203"), {
 			onEachFeature: function( feature, layer ){
 				layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
-		}).addTo(map);
-
+		}).addTo(map);*/
+		
+		
+		
+		
+		/*
 		map.locate({setView: true, maxZoom: 16});
 		
 		function onLocationFound(e) {
@@ -65,12 +97,13 @@
 				.openOn(map);
 		}
 
-		map.on('click', onMapClick);
+		map.on('click', onMapClick);*/
 		
 		function goToBuildings() {
 			document.location.href = 'listebat.html';
 		}
 		
+		/*
 		function getCoord(id) {
 			$.getJSON('batiment.geojson', function (data) {
 				$.each(data.features, function (key, val) {
@@ -83,7 +116,7 @@
 			    	});         
 				});
 			});
-		}
+		}*/
 
 	</script>
 </body>
