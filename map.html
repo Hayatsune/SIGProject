@@ -26,14 +26,19 @@
 			id: 'mapbox.streets'
 		}).addTo(map);
 		
-		$.getJSON("Polygon.geojson",function(data){
+		$.getJSON("batiment2.geojson",function(data){
 			L.geoJson(data, {
 				onEachFeature: function( feature, layer ){
 					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
 			}).addTo(map);
 		});
 		
-		
+		$.getJSON("rue.geojson",function(data){
+			L.geoJson(data, {
+				onEachFeature: function( feature, layer ){
+					layer.bindPopup( "<strong>" + feature.properties.highway + "</strong><br/>")}
+			}).addTo(map);
+		});
 
 		map.locate({setView: true, maxZoom: 16});
 		
