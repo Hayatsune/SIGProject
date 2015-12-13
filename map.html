@@ -26,12 +26,16 @@
 			id: 'mapbox.streets'
 		}).addTo(map);
 		
-		$.getJSON("batiment.geojson",function(data){
+		$.getJSON("batiment2.geojson",function(data){
 			L.geoJson(data, {
-				onEachFeature: function( feature, layer ){
+				onEachFeature: function(feature, layer) {
 					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")}
 			}).addTo(map);
 		});
+
+		var roads = L.layerGroup();
+		var footways = L.layerGroup();
+		var railways = L.layerGroup();
 
 		var styleFootway = {
 			"color": "Sienna",
@@ -57,7 +61,14 @@
 		$.getJSON("rue_v2.geojson",function(data){
 			L.geoJson(data, {
 				onEachFeature: function( feature, layer ){
-					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")
+					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>");
+					if (feature.properties.railway) {
+						railways.addLayer(layer);
+					} else if (feature.properties.highway == "footway") {
+						footways.addLayer(layer);
+					} else {
+						roads.addLayer(layer);
+					}
 				},
 				style: function(feature) {
 					if (feature.properties.highway) {
@@ -75,6 +86,15 @@
 				}
 			}).addTo(map);
 		});
+
+		var baseLayers = {};
+
+		var overlays = {
+			"Routes": roads,
+			"Voies piétonnes": footways
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
 		
 		
 
