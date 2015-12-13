@@ -9,11 +9,9 @@
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 </head>
 <body>
-	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/>
-	<form action="map.html">
+	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/><br>
 	  <input type="text" name="batiment" id="batiment">
 	  <input type="button" onclick="searchBat(document.getElementById('batiment').value)" value="Rechercher">
-	</form>
 	<div id="map" style="width: 600px; height: 400px"></div>
 
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -55,10 +53,21 @@
 			bat.addTo(map);
 		});
 		
-		function searchBat(bat) {
-			
+		function searchBat(namebat) {
+			var batiment = $.getJSON("batiment.geojson");
+			batiment.then(function(data){
+				var bat = L.geoJson(data, {
+					filter: function(feature, layer) {
+						if(feature.properties.name) {
+							if ((feature.properties.name).indexOf(namebat) !=-1) {
+								return feature.properties.name;
+							}
+						}
+					}
+				});
+				bat.addTo(map);
+			});
 		}
-		
 		
 		/*
 		L.geoJson(getCoord("relation/1717203"), {
