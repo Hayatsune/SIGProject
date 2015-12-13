@@ -54,19 +54,47 @@
 		});
 		
 		function searchBat(namebat) {
+			if (namebat) {
+				var cpt=0;
+				clearMap(map);
+				var batiment = $.getJSON("batiment.geojson");
+				batiment.then(function(data){
+					var bat = L.geoJson(data, {
+						filter: function(feature, layer) {
+							if(feature.properties.name) {
+								if ((feature.properties.name).indexOf(namebat) !=-1) {
+									cpt++;
+									return feature.properties.name;
+								}
+							}
+						}
+					});
+					if (cpt>1) {
+						bat.addTo(map).on('click', onMapClick);
+						alert("Cliquez sur le bâtiment qui vous intéresse");
+					} else {
+						bat.addTo(map);
+					}
+				});
+			} else {
+				alert("Veuillez entrer un champ correct");
+			}
+		}
+
+		function onMapClick(e) {
 			clearMap(map);
 			var batiment = $.getJSON("batiment.geojson");
 			batiment.then(function(data){
-				var bat = L.geoJson(data, {
-					filter: function(feature, layer) {
-						if(feature.properties.name) {
-							if ((feature.properties.name).indexOf(namebat) !=-1) {
-								return feature.properties.name;
-							}
+			var bat = L.geoJson(data, {
+				filter: function(feature, layer) {
+					if(feature.properties.name) {
+						if (feature.properties.name == e.layer.feature.properties.name) {
+							return e.layer.feature.properties.name;
 						}
 					}
-				});
-				bat.addTo(map);
+				}
+			});
+			bat.addTo(map);
 			});
 		}
 
