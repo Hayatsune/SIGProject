@@ -103,17 +103,29 @@
 			return [x,y]; //this is it
 		}
 
+		function syncJSON(i_url, callback) {
+		  $.ajax({
+		    type: "POST",
+		    async: false,
+		    url: i_url,
+		    contentType: "application/json",
+		    dataType: "json",
+		    success: function (msg) { callback(msg) },
+		    error: function (msg) { alert('error : ' + msg.d); }
+		  });
+		}
+
 		var popup = L.popup();
 		function getClosest(type, lat, lg) {
 			var d, coorda, coordb, CA, CB, Atmp, Btmp, dtmp, p, ptmp;
-			$.getJSON(type+'.geojson', function (data) {
+			syncJSON(type+'.geojson', function (data) {
 				$.each(data.features, function (i, j) {
 					$.each(j.geometry, function(key,val){
 						if(key == 'coordinates'){
 							Atmp = val[0];
 							Btmp = val[1];
 							CA = Math.sqrt( Math.pow((Atmp[0]-lat),2) + Math.pow((Atmp[1]-lg),2) );
-							CB = Math.sqrt( Math.pow((Btmp[0]-lat),2) + Math.pow((Btmp[1]-lg[1]),2) );
+							CB = Math.sqrt( Math.pow((Btmp[0]-lat),2) + Math.pow((Btmp[1]-lg),2) );
 							dtmp = Math.abs( (Btmp[0]-Atmp[0])*(lg-Atmp[1]) - (Btmp[1]-Atmp[1])*(lat-Atmp[0]) ) / Math.sqrt( Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2) );
 							ptmp = getSpPoint(Atmp, Btmp, [lat, lg]);
 							DA = Math.sqrt(Math.pow((Atmp[0]-ptmp[0]),2) + Math.pow((Atmp[1]-ptmp[1]),2));
@@ -169,13 +181,10 @@
 		function onMapClick(e) {
 			var p = getClosest('rue_v2', e.latlng.lat, e.latlng.lng);
 			console.log('2 '+p);
-			p.done(function(){
-				console.log('3 '+p);
-				popup
-				.setLatLng({lat: p[0], lng: p[1]})
-				.setContent("You clicked the map at " + p[0] + ", " + p[1])
-				.openOn(map);
-			});
+			popup
+			.setLatLng({lat: p[0], lng: p[1]})
+			.setContent("You clicked the map at " + p[0] + ", " + p[1])
+			.openOn(map);
 		}
 
 		map.on('click', onMapClick);
