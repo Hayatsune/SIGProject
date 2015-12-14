@@ -94,13 +94,88 @@
 
 		map.on('locationerror', onLocationError);
 
+				// Retourne la projection orthogonale de C sur la droite (AB)
+		function getSpPoint(A,B,C){
+			var x1=A[0], y1=A[1], x2=B[0], y2=B[1], x3=C[0], y3=C[1];
+			var px = x2-x1, py = y2-y1, dAB = px*px + py*py;
+			var u = ((x3 - x1) * px + (y3 - y1) * py) / dAB;
+			var x = x1 + u * px, y = y1 + u * py;
+			return [x,y]; //this is it
+		}
+
 		var popup = L.popup();
+		function getClosest(type, lat, lg) {
+			var d, coorda, coordb, CA, CB, Atmp, Btmp, dtmp, p, ptmp;
+			$.getJSON(type+'.geojson', function (data) {
+				$.each(data.features, function (i, j) {
+					$.each(j.geometry, function(key,val){
+						if(key == 'coordinates'){
+							Atmp = val[0];
+							Btmp = val[1];
+							CA = Math.sqrt( Math.pow((Atmp[0]-lat),2) + Math.pow((Atmp[1]-lg),2) );
+							CB = Math.sqrt( Math.pow((Btmp[0]-lat),2) + Math.pow((Btmp[1]-lg[1]),2) );
+							dtmp = Math.abs( (Btmp[0]-Atmp[0])*(lg-Atmp[1]) - (Btmp[1]-Atmp[1])*(lat-Atmp[0]) ) / Math.sqrt( Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2) );
+							ptmp = getSpPoint(Atmp, Btmp, [lat, lg]);
+							DA = Math.sqrt(Math.pow((Atmp[0]-ptmp[0]),2) + Math.pow((Atmp[1]-ptmp[1]),2));
+							DB = Math.sqrt(Math.pow((Btmp[0]-ptmp[0]),2) + Math.pow((Btmp[1]-ptmp[1]),2));
+							AB = Math.sqrt(Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2));
+							if(Math.abs(DA+DB-AB)>0.000001){
+								if(CA < CB){
+									dtmp = CA;
+									ptmp = Atmp;
+								}
+								else{
+									dtmp = CB;
+									ptmp = Btmp;
+								}
+							}
+							for (var i = 1; i < val.length-1; i++) {
+								coorda = val[0];
+								coordb = val[1];
+								d = Math.abs( (coordb[0]-coorda[0])*(lg-coorda[1]) - (coordb[1]-coorda[1])*(lat-coorda[0]) ) / Math.sqrt( Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2) );
+								//test orthogonalitude
+								p = getSpPoint(coorda, coordb, [lat, lg]);
+
+								CA = Math.sqrt(Math.pow((coorda[0]-lat),2) + Math.pow((coorda[1]-lg),2));
+								CB = Math.sqrt(Math.pow((coordb[0]-lat),2) + Math.pow((coordb[1]-lg[1]),2));
+								DA = Math.sqrt(Math.pow((coorda[0]-p[0]),2) + Math.pow((coorda[1]-p[1]),2));
+								DB = Math.sqrt(Math.pow((coordb[0]-p[0]),2) + Math.pow((coordb[1]-p[1]),2));
+								AB = Math.sqrt(Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2));
+								if(Math.abs(DA+DB-AB)>0.000001){
+									if(CA < CB){
+										d = CA;
+										ptmp = coorda;
+									}
+									else{
+										d = CB;
+										ptmp = coordb;
+									}
+								}
+								if(d<dtmp){
+									dtmp = d;
+									Atmp = coorda;
+									Btmp = coordb;
+									ptmp = p;
+								}
+							}
+						}
+					});
+				});
+			});
+			console.log('1 '+ptmp);
+			return ptmp;
+		}
 
 		function onMapClick(e) {
-			popup
-				.setLatLng(e.latlng)
-				.setContent("You clicked the map at " + e.latlng.toString())
+			var p = getClosest('rue_v2', e.latlng.lat, e.latlng.lng);
+			console.log('2 '+p);
+			p.done(function(){
+				console.log('3 '+p);
+				popup
+				.setLatLng({lat: p[0], lng: p[1]})
+				.setContent("You clicked the map at " + p[0] + ", " + p[1])
 				.openOn(map);
+			});
 		}
 
 		map.on('click', onMapClick);
@@ -109,28 +184,7 @@
 			document.location.href = 'listebat.html';
 		}
 
-		function getClosest(type, lat, lg) {
-			var l, coorda, coordb, a, b;
-			$.getJSON(type+'.geojson', function (data) {
-				$.each(data.features.geometry, function (key, val) {
-					if(key == 'coordinates'){
-						for (var i = 0; i < val.length-1; i++) {
-							coorda = val[i];
-							coordb = val[i+1];
-							if((coordb[1]-coorda[1]) != 0){
-								a = (coordb[0]-coorda[0])/(coordb[1]-coorda[1]);
-								b = coordb[1]-a*coordb[0];
-								l = Math.abs(a*lat-lg+b)/Math.sqrt(1+b*b);
-							} else if((coordb[1]-coorda[1]) == 0){
-								l = Math.abs(coorda[0]-lat);
-							} else if((coordb[0]-coorda[0]) == 0){
-								l = Math.abs(coorda[1]-lg);
-							}
-						}
-					}
-				});
-			});
-		}
+
 
 		function fTest(type, A, B, C) {
 			var a, b, vAB, AB, CA, CB, pAB;
