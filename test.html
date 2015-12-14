@@ -116,18 +116,20 @@
 		}
 
 		var popup = L.popup();
-		function getClosest(type, lat, lg) {
+		function getClosest(type, lng, lat) {
 			var d, coorda, coordb, CA, CB, Atmp, Btmp, dtmp, p, ptmp;
+			var i = 0;
 			syncJSON(type+'.geojson', function (data) {
 				$.each(data.features, function (i, j) {
 					$.each(j.geometry, function(key,val){
+						i++;
 						if(key == 'coordinates'){
 							Atmp = val[0];
 							Btmp = val[1];
-							CA = Math.sqrt( Math.pow((Atmp[0]-lat),2) + Math.pow((Atmp[1]-lg),2) );
-							CB = Math.sqrt( Math.pow((Btmp[0]-lat),2) + Math.pow((Btmp[1]-lg),2) );
-							dtmp = Math.abs( (Btmp[0]-Atmp[0])*(lg-Atmp[1]) - (Btmp[1]-Atmp[1])*(lat-Atmp[0]) ) / Math.sqrt( Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2) );
-							ptmp = getSpPoint(Atmp, Btmp, [lat, lg]);
+							CA = Math.sqrt( Math.pow((Atmp[0]-lng),2) + Math.pow((Atmp[1]-lat),2) );
+							CB = Math.sqrt( Math.pow((Btmp[0]-lng),2) + Math.pow((Btmp[1]-lat),2) );
+							dtmp = Math.abs( (Btmp[0]-Atmp[0])*(lat-Atmp[1]) - (Btmp[1]-Atmp[1])*(lng-Atmp[0]) ) / Math.sqrt( Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2) );
+							ptmp = getSpPoint(Atmp, Btmp, [lng, lat]);
 							DA = Math.sqrt(Math.pow((Atmp[0]-ptmp[0]),2) + Math.pow((Atmp[1]-ptmp[1]),2));
 							DB = Math.sqrt(Math.pow((Btmp[0]-ptmp[0]),2) + Math.pow((Btmp[1]-ptmp[1]),2));
 							AB = Math.sqrt(Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2));
@@ -144,16 +146,16 @@
 							for (var i = 1; i < val.length-1; i++) {
 								coorda = val[0];
 								coordb = val[1];
-								d = Math.abs( (coordb[0]-coorda[0])*(lg-coorda[1]) - (coordb[1]-coorda[1])*(lat-coorda[0]) ) / Math.sqrt( Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2) );
+								d = Math.abs( (coordb[0]-coorda[0])*(lat-coorda[1]) - (coordb[1]-coorda[1])*(lng-coorda[0]) ) / Math.sqrt( Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2) );
 								//test orthogonalitude
-								p = getSpPoint(coorda, coordb, [lat, lg]);
+								p = getSpPoint(coorda, coordb, [lng, lat]);
 
-								CA = Math.sqrt(Math.pow((coorda[0]-lat),2) + Math.pow((coorda[1]-lg),2));
-								CB = Math.sqrt(Math.pow((coordb[0]-lat),2) + Math.pow((coordb[1]-lg[1]),2));
+								CA = Math.sqrt(Math.pow((coorda[0]-lng),2) + Math.pow((coorda[1]-lat),2));
+								CB = Math.sqrt(Math.pow((coordb[0]-lng),2) + Math.pow((coordb[1]-lat[1]),2));
 								DA = Math.sqrt(Math.pow((coorda[0]-p[0]),2) + Math.pow((coorda[1]-p[1]),2));
 								DB = Math.sqrt(Math.pow((coordb[0]-p[0]),2) + Math.pow((coordb[1]-p[1]),2));
 								AB = Math.sqrt(Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2));
-								if(Math.abs(DA+DB-AB)>0.000001){
+								if(Math.abs(DA+DB-AB)>0.0000000000000001){
 									if(CA < CB){
 										d = CA;
 										ptmp = coorda;
@@ -174,15 +176,15 @@
 					});
 				});
 			});
-			console.log('1 '+ptmp);
+			console.log(i);
 			return ptmp;
 		}
 
 		function onMapClick(e) {
-			var p = getClosest('rue_v2', e.latlng.lat, e.latlng.lng);
-			console.log('2 '+p);
+			var p = getClosest('rue_v2', e.latlng.lng, e.latlng.lat);
+			console.log(p + ' ' + e.latlng.lat + ' ' + e.latlng);
 			popup
-			.setLatLng({lat: p[0], lng: p[1]})
+			.setLatLng({lat: p[1], lng: p[0]})
 			.setContent("You clicked the map at " + p[0] + ", " + p[1])
 			.openOn(map);
 		}
