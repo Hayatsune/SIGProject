@@ -55,10 +55,10 @@
 		}
 
 		$.getJSON("rue_v2.geojson",function(data){
-			L.geoJson(data, {
+			L.geoJson(data, {/*
 				onEachFeature: function( feature, layer ){
 					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>")
-				},
+				},*/
 				style: function(feature) {
 					if (feature.properties.highway) {
 						switch (feature.properties.highway) {
@@ -118,52 +118,35 @@
 		var popup = L.popup();
 		function getClosest(type, lng, lat) {
 			var d, coorda, coordb, CA, CB, Atmp, Btmp, dtmp, p, ptmp;
-			dtmp = 10;
 			syncJSON(type+'.geojson', function (data) {
+				dtmp = 10.0;
+				console.log(dtmp);
 				$.each(data.features, function (i, j) {
 					$.each(j.geometry, function(key,val){
 						if(key == 'coordinates'){
-							/*Atmp = val[0];
-							Btmp = val[1];
-							CA = Math.sqrt( Math.pow((Atmp[0]-lng),2) + Math.pow((Atmp[1]-lat),2) );
-							CB = Math.sqrt( Math.pow((Btmp[0]-lng),2) + Math.pow((Btmp[1]-lat),2) );
-							dtmp = Math.abs( (Btmp[0]-Atmp[0])*(lat-Atmp[1]) - (Btmp[1]-Atmp[1])*(lng-Atmp[0]) ) / Math.sqrt( Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2) );
-							ptmp = getSpPoint(Atmp, Btmp, [lng, lat]);
-							DA = Math.sqrt(Math.pow((Atmp[0]-ptmp[0]),2) + Math.pow((Atmp[1]-ptmp[1]),2));
-							DB = Math.sqrt(Math.pow((Btmp[0]-ptmp[0]),2) + Math.pow((Btmp[1]-ptmp[1]),2));
-							AB = Math.sqrt(Math.pow((Btmp[0]-Atmp[0]),2) + Math.pow((Btmp[1]-Atmp[1]),2));
-							if(Math.abs(DA+DB-AB)>0){
-								if(CA < CB){
-									dtmp = CA;
-									ptmp = Atmp;
-								}
-								else{
-									dtmp = CB;
-									ptmp = Btmp;
-								}
-							}*/
 							for (var i = 0; i < val.length-1; i++) {
 								coorda = val[i];
 								coordb = val[i+1];
 								d = Math.abs( (coordb[0]-coorda[0])*(lat-coorda[1]) - (coordb[1]-coorda[1])*(lng-coorda[0]) ) / Math.sqrt( Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2) );
-								p = getSpPoint(coorda, coordb, [lat, lng]);
-
+								p = getSpPoint(coorda, coordb, [lng, lat]);
+								
 								CA = Math.sqrt(Math.pow((coorda[0]-lng),2) + Math.pow((coorda[1]-lat),2));
-								CB = Math.sqrt(Math.pow((coordb[0]-lng),2) + Math.pow((coordb[1]-lat[1]),2));
+								CB = Math.sqrt(Math.pow((coordb[0]-lng),2) + Math.pow((coordb[1]-lat),2));
 								DA = Math.sqrt(Math.pow((coorda[0]-p[0]),2) + Math.pow((coorda[1]-p[1]),2));
 								DB = Math.sqrt(Math.pow((coordb[0]-p[0]),2) + Math.pow((coordb[1]-p[1]),2));
 								AB = Math.sqrt(Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2));
-								if(Math.abs(DA+DB-AB)>0.00001){
+								if(Math.abs(DA+DB-AB)>0){
 									if(CA < CB){
 										d = CA;
-										ptmp = coorda;
+										p = coorda;
 									}
 									else{
 										d = CB;
-										ptmp = coordb;
+										p = coordb;
 									}
 								}
 								if(d<dtmp){
+									console.log('now, '+d+'<'+dtmp);
 									dtmp = d;
 									Atmp = coorda;
 									Btmp = coordb;
