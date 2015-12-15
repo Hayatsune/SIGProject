@@ -232,17 +232,23 @@
 					var strBat = selectedBat.options[selectedBat.selectedIndex].text;
 					liste = xmlDoc.getElementsByTagName("name");
 					for (var j = 0; j < liste.length ; j++){
-						alert(liste[j].textContent);
 						if(liste[j].textContent==strBat){
-								alert("lol");
+							for(var k = 0; k < xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service").length ; k++){
+								var newEle = xmlDoc.createElement("service");
+								xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].appendChild(document.getElementById("url").value);
+								var att = document.createAttribute("nom");
+								att.value = document.getElementById("name").value; 
+								xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].setAttributeNode(att); 
 								booladd=false;
 							}
 						}
-			    }
+					}
+				}
 			};
 		xhttp.open("GET", "nomBatiments.xml", true);
 		xhttp.send();
-			}
+		}
+	
 
 		function getBatiment(xml){
 			var listeBatXml = document.getElementById('bat');
