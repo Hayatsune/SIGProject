@@ -14,7 +14,8 @@
 	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/><br>
 	  <input type="text" name="batiment" id="batiment">
 	  <input type="button" onclick="searchBat(document.getElementById('batiment').value)" value="Rechercher">
-	<div id="map" style="width: 90%; height: 90%;">
+	<div id="map" style="width: 80%; height: 80%;">
+	
 
 	<script>
 
@@ -52,12 +53,19 @@
 			var bat = L.geoJson(data, {
 				filter: function(feature, layer) {
 					return feature.properties.id == idbat;
+				},
+				onEachFeature: function( feature, layer ){
+					if(feature.properties.id == idbat){
+						xhttp.onreadystatechange = function() {
+							if (xhttp.readyState == 4 && xhttp.status == 200) {
+								getservice(xhttp,feature.properties.name);
+							}
+						};
+					xhttp.open("GET", "nomBatiments.xml", true);
+					xhttp.send();
+					}
 				}
 			});
-			if(idbat){
-				service = getservice(xhttp,feature.properties.name);
-				console.log(service);
-			}
 			bat.addTo(map);
 		});
 		
@@ -182,13 +190,73 @@
 			var xmlDoc = xml.responseXML;
 			liste = xmlDoc.getElementsByTagName("name");
 			for (var j = 0; j < liste.length ; j++){
-				if(liste[j]==nombat){
-					return xmlDoc.getElementsByTagName("service")[j];
+				if(liste[j].textContent==nombat){
+					for(var k = 0; k < xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service").length ; k++){
+
+					//document.getElementById("serv").innerHTML = "<p>"+xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].attributes.getNamedItem("nom").nodeValue + " : " + "<a>" +xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].textContent+ "</a>" +"</p>" + document.getElementById("serv").innerHTML;
+					
+					document.getElementById("serv").innerHTML = "<p>"+"<A HREF="+xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].textContent+">"+ xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].attributes.getNamedItem("nom").nodeValue +"</A>"+"</p>" + document.getElementById("serv").innerHTML;
+
+
+					}
 				}
 			}
 		}
 
+		var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (xhttp.readyState == 4 && xhttp.status == 200) {
+			    	getBatiment(xhttp);
+			    }
+			};
+		xhttp.open("GET", "nomBatiments.xml", true);
+		xhttp.send();
+
+		var booladd=false;
+		function addService(name,url){
+			booladd = true;
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (xhttp.readyState == 4 && xhttp.status == 200 && booladd) {
+			    	var xmlDoc = xhttp.responseXML;
+					var selectedBat = document.getElementById("bat");
+					var strBat = selectedBat.options[selectedBat.selectedIndex].text;
+					liste = xmlDoc.getElementsByTagName("name");
+					for (var j = 0; j < liste.length ; j++){
+						alert(liste[j].textContent);
+						if(liste[j].textContent==strBat){
+								alert("lol");
+								booladd=false;
+							}
+						}
+			    }
+			};
+		xhttp.open("GET", "nomBatiments.xml", true);
+		xhttp.send();
+			}
+
+		function getBatiment(xml){
+			var listeBatXml = document.getElementById('bat');
+			var xmlDoc = xml.responseXML;
+			liste = xmlDoc.getElementsByTagName("name");
+			for (var j = 0; j < liste.length ; j++){
+				var option = document.createElement("option");
+				option.text = liste[j].textContent;
+				listeBatXml.add(option);
+			}
+		}
+
+
+
 	</script>
 	</div>
+	<p id="addserv" style="height: 2%;">
+	<select id="bat">
+	</select>
+		<input type="text" name="name" id="name">
+		<input type="text" name="url" id="url">
+	  	<input type="button" onclick="addService(document.getElementById('name').value,document.getElementById('url').value)" value="Ajouter le service">
+	</p>
+	<p id="serv" style="height: 8%;"></p>
 </body>
 </html>
