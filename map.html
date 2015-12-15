@@ -85,6 +85,75 @@
 		drawHighlightedPath(tabToAdd);
 		drawHighlightedPath(tabToAdd2);*/
 
+		function listePoints(tab){
+			var tmp = new Array();
+			var l = 0;
+			for (var j = 0; j < tab.length ; j++){
+				for (var k = 0; k < tab[j].length ; k++){
+					tmp[l] = tab[j][k];
+					l++;
+				}
+			}
+			return tmp;
+		}
+		
+		function listeSegments(tab){
+			var tmp = new Array();
+			var l = 0;
+			for (var j = 0; j < tab.length ; j++){
+				for (var k = 0; k < tab[j].length-1 ; k++){
+					tmp[l] = [tab[j][k],tab[j][k+1]];
+					l++;
+				}
+			}
+			return tmp;
+		}
+
+		function getId(tabCoord, lat, lng) {
+			for (var i = 0; i < tabCoord.length ; i++) {
+				if (tabCoord[i].lat==lat && tabCoord[i].lng==lng)
+					return i;
+			}
+			return null;
+		}
+
+		function createGraph(file) {
+			var newTab = new Array();
+			var i = 0;
+			var rue = $.getJSON(file);
+			rue.then(function(data){
+				var r = L.geoJson(data, {
+					onEachFeature: function( feature, layer ){
+						if(feature.properties.name!="Ligne A"){
+							newTab[i] = layer.getLatLngs();
+							i++;
+						}
+					}
+				});
+				var points = listePoints(newTab);
+				var seg = listeSegments(newTab);
+
+				// Graphe
+				var graph = new Object();
+				graph.sommet = points;
+				var listeAdj = new Array(points.length);
+				for (var h = 0; h < listeAdj.length ; h++) {
+					listeAdj[h] = new Array();
+				}
+				for (var j = 0; j < seg.length ; j++) {
+					var id1 = getId(points, seg[j][0].lat, seg[j][0].lng);
+					var id2 = getId(points, seg[j][1].lat, seg[j][1].lng);
+					listeAdj[id1][listeAdj[id1].length] = id2;
+					listeAdj[id2][listeAdj[id2].length] = id1;
+				};
+				graph.listeAdj = listeAdj;
+
+				return graph;
+			});
+		}
+
+		var graph = createGraph("rue_v2.geojson");
+
 		$.getJSON("rue_v2.geojson",function(data){
 			L.geoJson(data, {
 				onEachFeature: function( feature, layer ){
