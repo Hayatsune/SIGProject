@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batiments>
+<batiment>
+	<name>Amphithéatre de l'UFR de Sciences</name>
+</batiment>
+<batiment>
+	<name>Amphithêatres</name>
+</batiment>
+<batiment>
+	<name>Atelier de Génie Chimique</name>
+</batiment>
+<batiment>
+	<name>Atelier de Génie Industriel</name>
+</batiment>
+<batiment>
+	<name>Bâtiment Administratif</name>
+</batiment>
+<batiment>
+	<name>Batiment Enseignement Général UFR Sciences</name>
+</batiment>
+<batiment>
+	<name>Bibliothèque Départementale de Prêt</name>
+</batiment>
+<batiment>
+	<name>Bibliothèque Universitaire de LLSH</name>
+</batiment>
+<batiment>
+	<name>Bibliothèque Universitaire des Sciences</name>
+</batiment>
+<batiment>
+	<name>Bloc Central</name>
+</batiment>
+<batiment>
+	<name>Brasserie de l'Indien</name>
+</batiment>
+<batiment>
+	<name>Centre de Médecine Universitaire Jean Zay</name>
+</batiment>
+<batiment>
+	<name>Centre d'Innovation</name>
+</batiment>
+<batiment>
+	<name>Cône</name>
+</batiment>
+<batiment>
+	<name>Département Chimie</name>
+</batiment>
+<batiment>
+	<name>Département GEA</name>
+</batiment>
+<batiment>
+	<name>Département GMP</name>
+</batiment>
+<batiment>
+	<name>Département Informatique</name>
+</batiment>
+<batiment>
+	<name>Département Qlio</name>
+</batiment>
+<batiment>
+	<name>Étang du campus</name>
+</batiment>
+<batiment>
+	<name>Gymnase Universitaire</name>
+</batiment>
+<batiment>
+	<name>Halle des Sports</name>
+</batiment>
+<batiment>
+	<name>Institut de Chimie Organique et Analytique</name>
+</batiment>
+<batiment>
+	<name>Institut Universitaire de Technologie</name>
+</batiment>
+<batiment>
+	<name>I.R.F.M.K.</name>
+</batiment>
+<batiment>
+	<name>Kt Self</name>
+</batiment>
+<batiment>
+	<name>Le Bouillon</name>
+</batiment>
+<batiment>
+	<name>Maison de l'Étudiant</name>
+</batiment>
+<batiment>
+	<name>Ménagerie</name>
+</batiment>
+<batiment>
+	<name>Parc Floral</name>
+</batiment>
+<batiment>
+	<name>Piscine Municipale de la Source</name>
+</batiment>
+<batiment>
+	<name>Place de l'Indien</name>
+</batiment>
+<batiment>
+	<name>Place Léonard de Vinci</name>
+</batiment>
+<batiment>
+	<name>Polytech'Orléans</name>
+</batiment>
+<batiment>
+	<name>Présidence de l'université - Services centraux</name>
+</batiment>
+<batiment>
+	<name>Résidence Aristote</name>
+</batiment>
+<batiment>
+	<name>Résidence les Charmes</name>
+</batiment>
+<batiment>
+	<name>Résidence Les Châtaigners</name>
+</batiment>
+<batiment>
+	<name>Résidence les Dahlias</name>
+</batiment>
+<batiment>
+	<name>Résidence les Hêtres</name>
+</batiment>
+<batiment>
+	<name>Résidence Les Magnolias</name>
+</batiment>
+<batiment>
+	<name>Résidence les Ormes</name>
+</batiment>
+<batiment>
+	<name>Résidence Les Roses</name>
+</batiment>
+<batiment>
+	<name>Restaurants Universitaires - Le Forum - Le Bistro</name>
+</batiment>
+<batiment>
+	<name>Restaurant Universitaire - L'Anatidé</name>
+</batiment>
+<batiment>
+	<name>Restaurant Universitaire - Le Lac</name>
+</batiment>
+<batiment>
+	<name>Stade de la Source</name>
+</batiment>
+<batiment>
+	<name>Stade Omnisport de la Source</name>
+</batiment>
+<batiment>
+	<name>Station Elf</name>
+</batiment>
+<batiment>
+	<name>Tribune d'honneur</name>
+</batiment>
+<batiment>
+	<name>UFR de Droit, Économie et Gestion</name>
+</batiment>
+<batiment>
+	<name>UFR de Physique-Chimie</name>
+</batiment>
+<batiment>
+	<name>UFR de STAPS</name>
+</batiment>
+<batiment>
+	<name>UFR Lettres, Langues et Sciences Humaines</name>
+</batiment>
+<batiment>
+	<name>UFR Sciences Administration</name>
+</batiment>
+<batiment>
+	<name>Université de mathématiques</name>
+</batiment>
+<batiment>
+	<id>relation/1717203</id>
+	<name>Université d'informatique, Bat 3IA - LIFO</name>
+	<service name="pôle informatique">http://www.univ-orleans.fr/ires/info</service>
+	<service name="LIFO">http://www.univ-orleans.fr/lifo/</service>
+	<service name="Amigo">http://www.univ-orleans.fr/sciences-techniques/vie-etud</service>
+	<service name="Fifo">http://www.univ-orleans.fr/sciences-techniques/vie-etud</service>
+</batiment>
+<batiment>
+	<name>Relais Total Du Coudray</name>
+</batiment>
+</batiments>

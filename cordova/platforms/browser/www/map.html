@@ -41,6 +41,10 @@
 
 		var idbat = obtenirParametre("donnees");
 		
+		var xhttp = new XMLHttpRequest();
+		
+		var service;
+		
 		var batiment = $.getJSON("batiment.geojson");
 		batiment.then(function(data){
 			var allbat = L.geoJson(data);
@@ -50,6 +54,10 @@
 					return feature.properties.id == idbat;
 				}
 			});
+			if(idbat){
+				service = getservice(xhttp,feature.properties.name);
+				console.log(service);
+			}
 			bat.addTo(map);
 		});
 		
@@ -168,6 +176,17 @@
 				});
 			});
 		}*/
+		
+		var liste = new Array();
+		function getservice(xml,nombat) {
+			var xmlDoc = xml.responseXML;
+			liste = xmlDoc.getElementsByTagName("name");
+			for (var j = 0; j < liste.length ; j++){
+				if(liste[j]==nombat){
+					return xmlDoc.getElementsByTagName("service")[j];
+				}
+			}
+		}
 
 	</script>
 	</div>

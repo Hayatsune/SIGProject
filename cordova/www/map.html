@@ -14,7 +14,8 @@
 	<input type="submit" onclick="goToBuildings()" value="Voir liste bâtiments"/><br>
 	  <input type="text" name="batiment" id="batiment">
 	  <input type="button" onclick="searchBat(document.getElementById('batiment').value)" value="Rechercher">
-	<div id="map" style="width: 90%; height: 90%;">
+	<div id="map" style="width: 80%; height: 80%;">
+	
 
 	<script>
 
@@ -41,6 +42,10 @@
 
 		var idbat = obtenirParametre("donnees");
 		
+		var xhttp = new XMLHttpRequest();
+		
+		var service;
+		
 		var batiment = $.getJSON("batiment.geojson");
 		batiment.then(function(data){
 			var allbat = L.geoJson(data);
@@ -48,8 +53,22 @@
 			var bat = L.geoJson(data, {
 				filter: function(feature, layer) {
 					return feature.properties.id == idbat;
+				},
+				onEachFeature: function( feature, layer ){
+					if(feature.properties.id == idbat){
+						xhttp.onreadystatechange = function() {
+							if (xhttp.readyState == 4 && xhttp.status == 200) {
+								getservice(xhttp,feature.properties.name);
+								
+							}
+						};
+					xhttp.open("GET", "nomBatiments.xml", true);
+					xhttp.send();
+					
+					}
 				}
 			});
+			
 			bat.addTo(map);
 		});
 		
@@ -168,8 +187,27 @@
 				});
 			});
 		}*/
+		
+		var liste = new Array();
+		function getservice(xml,nombat) {
+			var xmlDoc = xml.responseXML;
+			liste = xmlDoc.getElementsByTagName("name");
+			for (var j = 0; j < liste.length ; j++){
+				if(liste[j].textContent==nombat){
+					for(var k = 0; k < xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service").length ; k++){
+
+					//document.getElementById("serv").innerHTML = "<p>"+xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].attributes.getNamedItem("nom").nodeValue + " : " + "<a>" +xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].textContent+ "</a>" +"</p>" + document.getElementById("serv").innerHTML;
+					
+					document.getElementById("serv").innerHTML = "<p>"+"<A HREF="+xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].textContent+">"+ xmlDoc.getElementsByTagName("batiment")[j].getElementsByTagName("service")[k].attributes.getNamedItem("nom").nodeValue +"</A>"+"</p>" + document.getElementById("serv").innerHTML;
+
+
+					}
+				}
+			}
+		}
 
 	</script>
 	</div>
+	<p id="serv" style="height: 10%;"></p>
 </body>
 </html>
