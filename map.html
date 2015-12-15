@@ -57,6 +57,33 @@
 			"weight": 5,
 			"opacity": 0.85
 		}
+		var styleHighlightedPath = {
+			color: "Red",
+			weight: 10,
+			opacity: 1
+		}
+
+		// Chemin à suivre en surbrillance
+		var highlightedPath = L.polyline([], styleHighlightedPath);
+
+		// Fonction de mise en surbrillance de chemin
+		function drawHighlightedPath (tabCoord) {
+			map.removeLayer(highlightedPath);
+			highlightedPath = L.polyline([], styleHighlightedPath);
+			$.each(tabCoord, function(index, value) {
+				var latlng = L.latLng(value[0],value[1]);
+				highlightedPath.addLatLng(latlng);
+			});
+			map.addLayer(highlightedPath);
+		}
+
+		//Quelques variables de tests + tests
+
+		/*var tabToAdd = [[47.8488821,1.9401357],[47.8488947,1.9403127],[47.8488785,1.9404415]];
+		var tabToAdd2 = [[47.84532547844658,1.9304716587066653],[47.846074324037886,1.9310188293457031],[47.846812358393215,1.9315552711486816],[47.84698516492007,1.9309866428375244],[47.846261533746464,1.9304609298706057],[47.84553069201576,1.929897665977478]];
+		var coordToAdd = [[47.8488821,1.9401357]];
+		drawHighlightedPath(tabToAdd);
+		drawHighlightedPath(tabToAdd2);*/
 
 		$.getJSON("rue_v2.geojson",function(data){
 			L.geoJson(data, {
