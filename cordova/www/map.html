@@ -101,17 +101,26 @@
 			clearMap(map);
 			var batiment = $.getJSON("batiment.geojson");
 			batiment.then(function(data){
-			var bat = L.geoJson(data, {
-				filter: function(feature, layer) {
-					if(feature.properties.name) {
-						if (feature.properties.name == e.layer.feature.properties.name) {
-							return e.layer.feature.properties.name;
+				var bat = L.geoJson(data, {
+					filter: function(feature, layer) {
+						if(feature.properties.name) {
+							if (feature.properties.name == e.layer.feature.properties.name) {
+								return e.layer.feature.properties.name;
+							}
 						}
 					}
-				}
-			});
+				});
 			bat.addTo(map);
 			});
+		}
+
+		map.on('click', onPointSelected);
+		function onPointSelected(e){
+			var p = getClosest('rue_v2', e.latlng.lng, e.latlng.lat);
+			popup
+			.setLatLng({lat: p[1], lng: p[0]})
+			.setContent("The closest road is at " + p[0] + ", " + p[1])
+			.openOn(map);
 		}
 
 		function clearMap(map) {
@@ -244,6 +253,69 @@
 				option.text = liste[j].textContent;
 				listeBatXml.add(option);
 			}
+		}
+
+		function getClosest(type, lng, lat) {
+			var d, coorda, coordb, CA, CB, Atmp, Btmp, dtmp, p, ptmp;
+			syncJSON(type+'.geojson', function (data) {
+				dtmp = 10.0;
+				console.log(dtmp);
+				$.each(data.features, function (i, j) {
+					$.each(j.geometry, function(key,val){
+						if(key == 'coordinates'){
+							for (var i = 0; i < val.length-1; i++) {
+								coorda = val[i];
+								coordb = val[i+1];
+								d = Math.abs( (coordb[0]-coorda[0])*(lat-coorda[1]) - (coordb[1]-coorda[1])*(lng-coorda[0]) ) / Math.sqrt( Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2) );
+								p = getSpPoint(coorda, coordb, [lng, lat]);
+								
+								CA = Math.sqrt(Math.pow((coorda[0]-lng),2) + Math.pow((coorda[1]-lat),2));
+								CB = Math.sqrt(Math.pow((coordb[0]-lng),2) + Math.pow((coordb[1]-lat),2));
+								DA = Math.sqrt(Math.pow((coorda[0]-p[0]),2) + Math.pow((coorda[1]-p[1]),2));
+								DB = Math.sqrt(Math.pow((coordb[0]-p[0]),2) + Math.pow((coordb[1]-p[1]),2));
+								AB = Math.sqrt(Math.pow((coordb[0]-coorda[0]),2) + Math.pow((coordb[1]-coorda[1]),2));
+								if(Math.abs(DA+DB-AB)>0){
+									if(CA < CB){
+										d = CA;
+										p = coorda;
+									}
+									else{
+										d = CB;
+										p = coordb;
+									}
+								}
+								if(d<dtmp){
+									dtmp = d;
+									Atmp = coorda;
+									Btmp = coordb;
+									ptmp = p;
+								}
+							}
+						}
+					});
+				});
+			});
+			return ptmp;
+		}
+
+		function getSpPoint(A,B,C){
+			var x1=A[0], y1=A[1], x2=B[0], y2=B[1], x3=C[0], y3=C[1];
+			var px = x2-x1, py = y2-y1, dAB = px*px + py*py;
+			var u = ((x3 - x1) * px + (y3 - y1) * py) / dAB;
+			var x = x1 + u * px, y = y1 + u * py;
+			return [x,y]; //this is it
+		}
+
+		function syncJSON(i_url, callback) {
+		  $.ajax({
+		    type: "POST",
+		    async: false,
+		    url: i_url,
+		    contentType: "application/json",
+		    dataType: "json",
+		    success: function (msg) { callback(msg) },
+		    error: function (msg) { alert('error : ' + msg.d); }
+		  });
 		}
 
 
