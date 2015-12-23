@@ -40,6 +40,159 @@
 			return unescape(location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
 		}
 
+		var roads = L.layerGroup();
+		var footways = L.layerGroup();
+		var railways = L.layerGroup();
+
+		var styleFootway = {
+			"color": "Sienna",
+			"weight": 3,
+			"opacity": 0.85
+		}
+		var styleRoad = {
+			"color": "DimGray",
+			"weight": 5,
+			"opacity": 0.85
+		}
+		var styleTramway = {
+			"color": "Yellow",
+			"weight": 5,
+			"opacity": 0.85
+		}
+		var styleOtherway = {
+			"color": "DimGray",
+			"weight": 5,
+			"opacity": 0.85
+		}
+		var styleHighlightedPath = {
+			color: "Red",
+			weight: 10,
+			opacity: 1
+		}
+
+		var baseLayers = {};
+
+		var overlays = {
+			"Routes": roads,
+			"Voies piétonnes": footways
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+
+		// Chemin à suivre en surbrillance
+		var highlightedPath = L.polyline([], styleHighlightedPath);
+
+		// Fonction de mise en surbrillance de chemin
+		function drawHighlightedPath (tabCoord) {
+			map.removeLayer(highlightedPath);
+			highlightedPath = L.polyline([], styleHighlightedPath);
+			$.each(tabCoord, function(index, value) {
+				var latlng = L.latLng(value[0],value[1]);
+				highlightedPath.addLatLng(latlng);
+			});
+			map.addLayer(highlightedPath);
+		}
+
+		// Fonctions listePoints, listeSegments,getId et createGraphe utilisées conjointement pour la création du graphe.
+
+		function listePoints(tab){
+			var tmp = new Array();
+			var l = 0;
+			for (var j = 0; j < tab.length ; j++){
+				for (var k = 0; k < tab[j].length ; k++){
+					tmp[l] = tab[j][k];
+					l++;
+				}
+			}
+			return tmp;
+		}
+		
+		function listeSegments(tab){
+			var tmp = new Array();
+			var l = 0;
+			for (var j = 0; j < tab.length ; j++){
+				for (var k = 0; k < tab[j].length-1 ; k++){
+					tmp[l] = [tab[j][k],tab[j][k+1]];
+					l++;
+				}
+			}
+			return tmp;
+		}
+
+		function getId(tabCoord, lat, lng) {
+			for (var i = 0; i < tabCoord.length ; i++) {
+				if (tabCoord[i].lat==lat && tabCoord[i].lng==lng)
+					return i;
+			}
+			return null;
+		}
+
+		function createGraph(file) {
+			var newTab = new Array();
+			var i = 0;
+			var rue = $.getJSON(file);
+			rue.then(function(data){
+				var r = L.geoJson(data, {
+					onEachFeature: function( feature, layer ){
+						if(feature.properties.name!="Ligne A"){
+							newTab[i] = layer.getLatLngs();
+							i++;
+						}
+					}
+				});
+				var points = listePoints(newTab);
+				var seg = listeSegments(newTab);
+
+				// Graphe
+				var graph = new Object();
+				graph.sommet = points;
+				var listeAdj = new Array(points.length);
+				for (var h = 0; h < listeAdj.length ; h++) {
+					listeAdj[h] = new Array();
+				}
+				for (var j = 0; j < seg.length ; j++) {
+					var id1 = getId(points, seg[j][0].lat, seg[j][0].lng);
+					var id2 = getId(points, seg[j][1].lat, seg[j][1].lng);
+					listeAdj[id1][listeAdj[id1].length] = id2;
+					listeAdj[id2][listeAdj[id2].length] = id1;
+				};
+				graph.listeAdj = listeAdj;
+
+				return graph;
+			});
+		}
+
+		var graph = createGraph("rue_v2.geojson");
+
+		$.getJSON("rue_v2.geojson",function(data){
+			L.geoJson(data, {
+				onEachFeature: function( feature, layer ){
+					layer.bindPopup( "<strong>" + feature.properties.name + "</strong><br/>");
+					if (feature.properties.railway) {
+						railways.addLayer(layer);
+					} else if (feature.properties.highway == "footway") {
+						footways.addLayer(layer);
+					} else {
+						roads.addLayer(layer);
+					}
+				},
+				style: function(feature) {
+					if (feature.properties.highway) {
+						switch (feature.properties.highway) {
+							case 'footway':
+								return styleFootway;
+							default:
+								return styleRoad;
+						}
+					} else if (feature.properties.railway == "tram") {
+						return styleTramway;
+					} else {
+						return styleOtherway;
+					}
+				}
+			}).addTo(map);
+		});
+
 		var idbat = obtenirParametre("donnees");
 		
 		var xhttp = new XMLHttpRequest();
